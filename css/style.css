@@ -1,40 +1,84 @@
-.linkMenu{
-    color:#fff;
+/* Definindo o fundo azul escuro para o corpo */
+body {
+    background-color: #1a2b49; /* Azul escuro */
+    color: #fff; /* Cor do texto branca */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para os links */
+.linkMenu {
+    color: #fff;
     text-decoration: none;
 }
 
-th, td, tr{
-    text-align: center;
+.linkMenu:hover {
+    color: #a3c1e2; /* Azul mais claro ao passar o mouse */
 }
 
+/* Estilo da tabela */
+th, td, tr {
+    text-align: center;
+    border: 1px solid #fff; /* Adiciona bordas brancas para as células da tabela */
+}
+
+th {
+    background-color: #1a2b49; /* Azul escuro para o cabeçalho da tabela */
+    color: #fff; /* Texto branco */
+}
+
+td {
+    background-color: #2c3e50; /* Azul escuro claro para as células */
+    color: #fff; /* Texto branco */
+}
+
+/* Estilos para a classe 'caixa' */
+.caixa {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    background-color: #847ab1; /* Azul escuro claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade para telas pequenas */
 @media (max-width: 575px) {
-    .caixa{
-        width: 70%;
-        margin-left: 15%;
+    .caixa {
+        width: 90%; /* Ajusta a largura para 90% em telas muito pequenas */
+        margin-left: 5%;
         margin-top: 20px;
     }
 }
+
+/* Responsividade para telas médias */
 @media (min-width: 576px) {
-    .caixa{
+    .caixa {
         width: 70%;
         margin-left: 15%;
         margin-top: 20px;
     }
 }
+
+/* Responsividade para tablets (telas grandes) */
 @media (min-width: 768px) {
-    .caixa{
-       /*Idem min576*/
+    .caixa {
+        width: 70%; /* Mesmo estilo da largura para tablets */
     }
 }
+
+/* Responsividade para telas maiores (desktop) */
 @media (min-width: 992px) {
-    .caixa{
+    .caixa {
         width: 60%;
         margin-left: 20%;
         margin-top: 20px;
     }
 }
+
+/* Responsividade para telas muito grandes */
 @media (min-width: 1200px) {
-    .caixa{
-        /*Idem min992*/
-     }
+    .caixa {
+        width: 60%; /* Mesmo estilo da largura para telas grandes */
+    }
 }
